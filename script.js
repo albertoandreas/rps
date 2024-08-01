@@ -1,21 +1,23 @@
 let humanScore = 0;
 let computerScore = 0;
+let humanChoice;
+let computerChoice;
 
 
 function getComputerChoice() {
-  const computerChoice = ["Rock", "Paper", "Scissors"];
-  const randomChoice = computerChoice[(Math.floor(Math.random() * (computerChoice.length)))];
-  console.log("The Computer has chosen " + randomChoice);
+  const randomChoice = ["Rock", "Paper", "Scissors"];
+  const computerChoice = randomChoice[(Math.floor(Math.random() * (randomChoice.length)))];
+  console.log(computerChoice);
 }
 
 function getHumanChoice() { 
   let humanChoice = prompt("Rock, Paper or Scissors? The coice is yours:");
   switch(humanChoice = humanChoice.toUpperCase()) {
-    case "ROCK" : console.log("You chose Rock");
+    case "ROCK" : console.log("Rock");
     break
-    case "PAPER" : console.log("You chose Paper");
+    case "PAPER" : console.log("Paper");
     break
-    case "SCISSORS" : console.log("You chose Scissors");
+    case "SCISSORS" : console.log("Scissors");
     break
     default : console.log("You can only choose between Rock, Paper and Scissors!");
   }
