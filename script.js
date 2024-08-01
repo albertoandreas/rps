@@ -1,3 +1,7 @@
+let humanScore = 0;
+let computerScore = 0;
+
+
 function getComputerChoice() {
   const compChoice = ["Rock", "Paper", "Scissors"];
   const randomChoice = compChoice[(Math.floor(Math.random() * (compChoice.length)))];
@@ -22,9 +26,4 @@ function getHumanChoice() {
   } else {
     return console.log ("You can only choose between Rock, Paper or Scissors!")
   }
-
-  
-  
 }
-
-getHumanChoice();
